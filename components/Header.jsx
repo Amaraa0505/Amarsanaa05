@@ -5,7 +5,7 @@ function Header() {
   return (
     <div className="flex h-11 items-center justify-between">
       <Link href="/" className="text-2xl font-bold">
-       Home
+        Home
       </Link>
       <div className="flex gap-20 pr-3 font-bold">
         {lists1.map((el) => (
