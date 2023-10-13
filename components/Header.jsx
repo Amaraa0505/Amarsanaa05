@@ -1,13 +1,13 @@
 import Link from "next/link";
 
 function Header() {
-  const lists1 = ["About", "Projects", "Experience", "Contact"];
+  const lists1 = ["About", "Work", "Experience", "Contact"];
   return (
-    <div className="flex bg-red-300 h-11 items-center justify-between">
-      <Link href="/work" className="text-2xl">
-        LOGO
+    <div className="flex h-11 items-center justify-between">
+      <Link href="/" className="text-2xl font-bold">
+       Home
       </Link>
-      <div className="flex gap-20 pr-3">
+      <div className="flex gap-20 pr-3 font-bold">
         {lists1.map((el) => (
           <Link href={"/" + el.toLowerCase()} className="text-2xl">
             {el}
